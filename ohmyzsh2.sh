@@ -29,7 +29,7 @@ echo #############################################################
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**"
 echo #############################################################
 sleep 3
-mv ex.zshrc .zshrc
+sudo mv ex.zshrc .zshrc
 sleep 1
 mv ex.p10k.zsh .p10k.zsh
 sleep 1
