@@ -104,11 +104,37 @@ sudo docker build -t rolldice . && sudo docker run -d --restart always rolldice
 
 echo #############################################################
 
-echo rollDice Bot собран и запущен запущен
+echo rollDice Bot собран и запущен
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Color_Off}"
 echo #############################################################
-cd /home/dfyz/debianstart
+cd /home/dfyz/
 pwd
+sleep 3
+
+echo сборка контейнера uno
+echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Green}"
+echo #############################################################
+sleep 3
+cd /home/dfyz
+echo #############################################################
+pwd 
+echo #############################################################
+sleep 3
+git clone https://github.com/dfyzicka/unobot.git && cd unobot/
+sleep 1
+sed -i 's/TOKEN=config.get("token")/TOKEN=config.get("6250390249:AAEYyDOvMpnedlscQ1r_uDH5Ct7cknEPEFw")/' /home/dfyz/unobot/config.py 
+sleep 1
+sudo docker build -t unobot . && sudo docker run -d --restart always unobot
+echo #############################################################
+echo UNO Bot собран и запущен 
+echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Color_Off}"
+echo #############################################################
+cd /home/dfyz/
+pwd
+
+
+
+
        sleep 0.3
     echo "#############################"
         sleep 0.3
