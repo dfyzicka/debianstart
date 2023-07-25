@@ -5,3 +5,67 @@ sudo chsh -s /usr/bin/zsh
 sleep 1
  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        sleep 0.3
+    echo "#############################"
+        sleep 0.3
+    echo "############################"
+        sleep 0.3
+    echo "###########################"
+        sleep 0.3
+    echo "##########################"
+        sleep 0.3
+    echo "##########################"
+        sleep 0.3
+    echo "#########################"
+        sleep 0.3
+    echo "########################"
+        sleep 0.3
+    echo "#######################"
+        sleep 0.3
+    echo "######################"
+        sleep 0.3
+    echo "#####################"
+        sleep 0.3
+    echo "####################"
+        sleep 0.3
+    echo "###################"
+        sleep 0.3
+    echo "##################"
+        sleep 0.3
+    echo "#################"
+        sleep 0.3
+    echo "################"
+        sleep 0.3
+    echo "###############"
+        sleep 0.3
+    echo "##############"
+        sleep 0.3
+    echo "#############"
+        sleep 0.3
+    echo "############"
+        sleep 0.3
+    echo "###########"
+        sleep 0.3
+    echo "##########"
+        sleep 0.3
+    echo "#########"
+        sleep 0.3
+    echo "########"
+        sleep 0.3
+    echo "#######"
+        sleep 0.3
+    echo "######"
+        sleep 0.3
+    echo "#####"
+        sleep 0.3
+    echo "####"
+        sleep 0.3
+    echo "###"
+        sleep 0.3
+    echo "##"
+        sleep 0.3
+    echo "#"
+        sleep 0.3
+
+
+

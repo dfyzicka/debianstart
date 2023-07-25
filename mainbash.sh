@@ -109,5 +109,68 @@ echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yell
 echo #############################################################
 cd /home/dfyz/debianstart
 pwd
-sleep 1
+       sleep 0.3
+    echo "#############################"
+        sleep 0.3
+    echo "############################"
+        sleep 0.3
+    echo "###########################"
+        sleep 0.3
+    echo "##########################"
+        sleep 0.3
+    echo "##########################"
+        sleep 0.3
+    echo "#########################"
+        sleep 0.3
+    echo "########################"
+        sleep 0.3
+    echo "#######################"
+        sleep 0.3
+    echo "######################"
+        sleep 0.3
+    echo "#####################"
+        sleep 0.3
+    echo "####################"
+        sleep 0.3
+    echo "###################"
+        sleep 0.3
+    echo "##################"
+        sleep 0.3
+    echo "#################"
+        sleep 0.3
+    echo "################"
+        sleep 0.3
+    echo "###############"
+        sleep 0.3
+    echo "##############"
+        sleep 0.3
+    echo "#############"
+        sleep 0.3
+    echo "############"
+        sleep 0.3
+    echo "###########"
+        sleep 0.3
+    echo "##########"
+        sleep 0.3
+    echo "#########"
+        sleep 0.3
+    echo "########"
+        sleep 0.3
+    echo "#######"
+        sleep 0.3
+    echo "######"
+        sleep 0.3
+    echo "#####"
+        sleep 0.3
+    echo "####"
+        sleep 0.3
+    echo "###"
+        sleep 0.3
+    echo "##"
+        sleep 0.3
+    echo "#"
+        sleep 5
 mc
+
+
+
