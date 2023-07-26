@@ -21,7 +21,7 @@ echo придумай новый пароль для root
 echo #############################################################
 sleep 1
 passwd root 
-echo "hiphopkins" > /etc/hostname
+#echo "hiphopkins" > /etc/hostname
 echo #############################################################
 cat /etc/hostname
 echo #############################################################
@@ -38,7 +38,7 @@ echo #############################################################
 echo #############################################################
 echo настройка ssh
 echo #############################################################
-sleep3
+sleep 3
 
 sed -i 's/PermitRootLogin yes/#PermitRootLogin yes/' /etc/ssh/sshd_config
 sed -i 's/Port 22/#Port 22/' /etc/ssh/sshd_config
