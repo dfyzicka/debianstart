@@ -126,12 +126,34 @@ sed -i 's/TOKEN=config.get("token")/TOKEN=config.get("6250390249:AAEYyDOvMpnedls
 sleep 1
 sudo docker build -t unobot . && sudo docker run -d --restart always unobot
 echo #############################################################
+
 echo UNO Bot собран и запущен 
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Color_Off}"
 echo #############################################################
 cd /home/dfyz/
 pwd
+sleep 3
+echo сборка контейнера 04k0
+echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Green}"
+echo #############################################################
+sleep 3
+cd /home/dfyz
+echo #############################################################
+pwd 
+echo #############################################################
+sleep 3
+git clone https://github.com/dfyzicka/o4ko.git && cd o4ko/
+sleep 1
+ sed -i 's/BOT_TOKEN = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"/BOT_TOKEN = "6611803603:AAEOJ68GxxPxwQSvFLXshH6zdI7psdy8tDo"/' /home/dfyz/o4ko/config.sample.py && mv config.sample.py config.py
+sleep 1
+sudo docker build -t o4ko . && sudo docker run -v./config.py:/blackjackbot/config.py -d --restart always o4ko  
+echo #############################################################
 
+echo 04k0 Bot собран и запущен 
+echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Color_Off}"
+echo #############################################################
+cd /home/dfyz/
+pwd
 
 
 
