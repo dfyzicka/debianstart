@@ -21,14 +21,14 @@ usermod -aG sudo dfyz
     echo #############################################################
         sleep 1
 passwd root 
-#   echo "hiphopkins" > /etc/hostname
+
 
     echo #############################################################
-#cat /etc/hostname
+
     echo #############################################################
         sleep 3
 apt-get upgrade -y 
-apt install sudo nano python3-full aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
+apt install zip unzip  sudo nano python3-full aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
         sleep 2
     echo #############################################################
 
