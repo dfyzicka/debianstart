@@ -22,12 +22,21 @@ echo #############################################################
 sleep 1
 passwd root 
 #echo "hiphopkins" > /etc/hostname
+hostnamectl
+sleep 2
+hostnamectl set-hostname "beerver" && hostnamectl
+sleep 3
 echo #############################################################
-cat /etc/hostname
+#cat /etc/hostname
 echo #############################################################
 sleep 3
 apt-get upgrade -y 
 apt install sudo nano python3 python3-pip aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
+sleep 2
+echo #############################################################
+
+echo установка DUF
+echo #############################################################
 
 wget https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb && dpkg -i duf_0.6.0_linux_amd64.deb
 
@@ -42,7 +51,7 @@ echo #############################################################
 echo #############################################################
 echo настройка ssh
 echo #############################################################
-sleep 3
+
 
 sed -i 's/PermitRootLogin yes/#PermitRootLogin yes/' /etc/ssh/sshd_config
 sed -i 's/Port 22/#Port 22/' /etc/ssh/sshd_config
@@ -69,8 +78,7 @@ cd ..
 sleep 3
 cp -r debianstart/ /home/dfyz/
 sleep 3
-cd /home/dfyz/debianstart
-sleep 3
+
 
 echo #############################################################
 
@@ -79,7 +87,7 @@ echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yell
 
 sleep 1
 echo #############################################################
-echo -e "${Red}выполни sudo ./mainbash.sh после перезагрузки новый" 
+echo -e "${Red}ПЕРЕЗАГРУЗКА" 
 echo -e "${Red}новый порт для подключения SSH - 2233"
 echo #############################################################
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
