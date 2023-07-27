@@ -27,7 +27,11 @@ cat /etc/hostname
 echo #############################################################
 sleep 3
 apt-get upgrade -y 
-apt install sudo nano python3 python3-pip aptitude git exa fzf duf neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
+apt install sudo nano python3 python3-pip aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
+
+wget https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb && dpkg -i duf_0.6.0_linux_amd64.deb
+
+
 echo #############################################################
 echo установка docker и docker-compose
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
