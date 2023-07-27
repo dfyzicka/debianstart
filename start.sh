@@ -8,49 +8,46 @@ Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 Color_Off='\033[0m'       # Text Reset
 
-echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
+    echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
 
-echo #############################################################
-echo придумай пароль для пользователя dfyz
-echo #############################################################
-sleep 1
+    echo #############################################################
+    echo придумай пароль для пользователя dfyz
+    echo #############################################################
+        sleep 1
 adduser dfyz
 usermod -aG sudo dfyz
-echo #############################################################
-echo придумай новый пароль для root 
-echo #############################################################
-sleep 1
+    echo #############################################################
+    echo придумай новый пароль для root 
+    echo #############################################################
+        sleep 1
 passwd root 
-#echo "hiphopkins" > /etc/hostname
-hostnamectl
-sleep 2
-hostnamectl set-hostname "beerver" && hostnamectl
-sleep 3
-echo #############################################################
-#cat /etc/hostname
-echo #############################################################
-sleep 3
-apt-get upgrade -y 
-apt install sudo nano python3 python3-pip aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
-sleep 2
-echo #############################################################
+#   echo "hiphopkins" > /etc/hostname
 
-echo установка DUF
-echo #############################################################
+    echo #############################################################
+#cat /etc/hostname
+    echo #############################################################
+        sleep 3
+apt-get upgrade -y 
+apt install sudo nano python3-full aptitude git exa fzf  neofetch speedtest-cli libpam-google-authenticator fonts-powerline bat neovim tldr ncdu bpytop mc curl davfs2  -y
+        sleep 2
+    echo #############################################################
+
+    echo установка DUF
+    echo #############################################################
 
 wget https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb && dpkg -i duf_0.6.0_linux_amd64.deb
 
 
-echo #############################################################
-echo установка docker и docker-compose
-echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
-echo #############################################################
-sleep 3
-sudo curl -fsSL https://get.docker.com -o get-docker.sh  && sh get-docker.sh sudo systemctl start docker  && sudo systemctl enable docker && sudo curl -L --fail https://raw.githubusercontent.com/linuxserver/docker-docker-compose/master/run.sh -o /usr/local/bin/docker-compose  && sudo chmod +x /usr/local/bin/docker-compose
-echo #############################################################
-echo #############################################################
-echo настройка ssh
-echo #############################################################
+    echo #############################################################
+    echo установка docker и docker-compose
+    echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
+    echo #############################################################
+        sleep 3
+curl -fsSL https://get.docker.com -o get-docker.sh  && sh get-docker.sh sudo systemctl start docker  && sudo systemctl enable docker && sudo curl -L --fail https://raw.githubusercontent.com/linuxserver/docker-docker-compose/master/run.sh -o /usr/local/bin/docker-compose  &&  chmod +x /usr/local/bin/docker-compose
+    echo #############################################################
+    echo #############################################################
+    echo настройка ssh
+    echo #############################################################
 
 
 sed -i 's/PermitRootLogin yes/#PermitRootLogin yes/' /etc/ssh/sshd_config
@@ -59,38 +56,47 @@ sed -i '1i Port 2233' /etc/ssh/sshd_config
 sed -i '2i PermitRootLogin no' /etc/ssh/sshd_config 
 sed -i '3i AllowUsers dfyz' /etc/ssh/sshd_config 
 systemctl restart sshd
-sleep 3
+        sleep 3
 chmod +x *.sh 
-echo #############################################################
-echo установка wireguard
-echo #############################################################
-sleep 3
+    echo #############################################################
+    echo установка wireguard
+    echo #############################################################
+        sleep 3
 
 curl -Of https://raw.githubusercontent.com/DigneZzZ/dwg-ui/main/setup.sh  && chmod +x setup.sh && ./setup.sh
 apt remove ufw -y
 
-echo #############################################################
-echo ufw удалён
-echo #############################################################
-
+    echo #############################################################
+    echo ufw удалён
+    echo #############################################################
+chmod +x *.sh 
 
 cd ..
-sleep 3
+        sleep 3
 cp -r debianstart/ /home/dfyz/
-sleep 3
+        sleep 3
 
 
-echo #############################################################
+    echo #############################################################
 
-echo #############################################################
-echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
+    echo #############################################################
+    echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
 
-sleep 1
-echo #############################################################
-echo -e "${Red}ПЕРЕЗАГРУЗКА" 
-echo -e "${Red}новый порт для подключения SSH - 2233"
-echo #############################################################
-echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
+        sleep 1
+    echo #############################################################
+    echo -e "${Red}ПЕРЕЗАГРУЗКА" 
+    echo -e "${Red}новый порт для подключения SSH - 2233"
+    echo #############################################################
+    echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
+hostnamectl
+        sleep 2
+hostnamectl set-hostname "beerver" && hostnamectl
+sed -i 's/127.0.1.1/#127.0.1.1/' /etc/hosts 
+sed '3i 127.0.0.1 beerver' /etc/hosts
+sed '4i 127.0.1.1 beerver' /etc/hosts
 
-sleep 5
+hostname
+sleep 2
+cat /etc/hosts
+        sleep 5
 reboot

@@ -12,6 +12,12 @@ echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yell
 
 
 echo #############################################################
+sudo apt install zsh -y
+sleep 1
+sudo chsh -s /usr/bin/zsh 
+sleep 1
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo устанвливаем oh-my-szh powerlevel10
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**"
@@ -31,7 +37,7 @@ echo #############################################################
 sleep 3
 sudo mv ex.zshrc .zshrc
 sleep 1
-mv ex.p10k.zsh .p10k.zsh
+sudo mv ex.p10k.zsh .p10k.zsh
 sleep 1
 sudo cp -r .zshrc /home/dfyz/
 sudo cp -r .p10k.zsh /home/dfyz/
