@@ -35,11 +35,11 @@ neofetch
     echo #############################################################
         sleep 5
 
-mv ex.nanorc .nanorc && cp -r .nanorc /home/dfyz/
+sudo mv ex.nanorc .nanorc && cp -r .nanorc /home/dfyz/
         sleep 1
-mv gptbot/ex.env gptbot/.env && sudo cp -r gptbot /home/dfyz/
+sudo mv gptbot/ex.env gptbot/.env && sudo cp -r gptbot /home/dfyz/
         sleep 1
-mv rollDice/ex.env rollDice/.env && sudo cp -r rollDice /home/dfyz/
+sudo mv rollDice/ex.env rollDice/.env && sudo cp -r rollDice /home/dfyz/
         sleep 1
 
 mkdir -p /home/dfyz/.local/share/mc/skins && cp -r mcSkins/skins/* /home/dfyz/.local/share/mc/skins
