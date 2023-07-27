@@ -122,7 +122,8 @@ pwd
         sleep 3
 git clone https://github.com/dfyzicka/unobot.git && cd unobot/
         sleep 1
-sed -i 's/TOKEN=config.get("token")/TOKEN=config.get("6250390249:AAEYyDOvMpnedlscQ1r_uDH5Ct7cknEPEFw")/' /home/dfyz/unobot/config.py 
+mv config.json.example config.json
+sed -i 's/"token": "token_here"/"token": "6250390249:AAEYyDOvMpnedlscQ1r_uDH5Ct7cknEPEFw"/' /home/dfyz/unobot/config.json 
         sleep 1
 sudo docker build -t unobot . && sudo docker run -d --restart always unobot
     echo #############################################################
