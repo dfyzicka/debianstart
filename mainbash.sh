@@ -20,7 +20,7 @@ Color_Off='\033[0m'       # Text Reset
 #####################################################################
 #####################################################################
 ####################################################################
-
+sudo apt install python3-pip -y
 
     echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Color_Off}"
 neofetch
@@ -37,9 +37,9 @@ neofetch
 
 mv ex.nanorc .nanorc && cp -r .nanorc /home/dfyz/
         sleep 1
-mv gptbot/ex.env gptbot/.env && cp -r gptbot /home/dfyz/
+mv gptbot/ex.env gptbot/.env && sudo cp -r gptbot /home/dfyz/
         sleep 1
-mv rollDice/ex.env rollDice/.env && cp -r rollDice /home/dfyz/
+mv rollDice/ex.env rollDice/.env && sudo cp -r rollDice /home/dfyz/
         sleep 1
 
 mkdir -p /home/dfyz/.local/share/mc/skins && cp -r mcSkins/skins/* /home/dfyz/.local/share/mc/skins
@@ -89,7 +89,7 @@ sudo docker build -t gptbot . && sudo docker run -d --restart always gptbot
     echo gpt бот собран и запущен
 
     echo #############################################################
-        sleep3
+        sleep 3
 
     echo сборка контейнера rollDice
     echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Green}"
