@@ -97,8 +97,10 @@ hostnamectl
         sleep 2
 hostnamectl set-hostname "beerver" && hostnamectl
 sed -i 's/127.0.1.1/#127.0.1.1/' /etc/hosts 
-sed '3i 127.0.0.1 beerver' /etc/hosts
-sed '4i 127.0.1.1 beerver' /etc/hosts
+#sed '11i 127.0.0.1 beerver' /etc/hosts
+#sed '12i 127.0.1.1 beerver' /etc/hosts
+echo "127.0.0.1 beerver" >> /etc/hosts
+echo "127.0.1.1 beerver" >> /etc/hosts
     echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
     echo hostname
 hostname
