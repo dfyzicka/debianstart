@@ -1,5 +1,7 @@
 export MANOPT="-L ru"
 
+
+alias=st "speedtest --no-upload | grep -E 'Hosted|Download:'"
 alias dclean="docker-compose down -v & docker system prune -f"
 ######===---- Поиск по соцсетям nala {username}
 ########tldr  лаконичный тезисный аналог man / для индексации нужно ввести tldr -u
