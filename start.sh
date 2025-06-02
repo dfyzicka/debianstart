@@ -55,6 +55,7 @@ sed -i 's/Port 22/#Port 22/' /etc/ssh/sshd_config
 sed -i '1i Port 2233' /etc/ssh/sshd_config 
 sed -i '2i PermitRootLogin no' /etc/ssh/sshd_config 
 sed -i '3i AllowUsers dfyz' /etc/ssh/sshd_config 
+sed -i '4i PasswordAuthentication yes' /etc/ssh/sshd_config
 systemctl restart sshd
         sleep 3
 chmod +x *.sh 
