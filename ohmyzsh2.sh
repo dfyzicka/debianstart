@@ -20,8 +20,8 @@ Color_Off='\033[0m'       # Text Reset
 
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/home/dfyz/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/home/dfyz/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/home/$USER/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/home/$USER/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     echo #############################################################
 
@@ -33,9 +33,9 @@ sudo mv ex.zshrc .zshrc
         sleep 1
 sudo mv ex.p10k.zsh .p10k.zsh
         sleep 1
-sudo cp -r .zshrc /home/dfyz/
-sudo cp -r .p10k.zsh /home/dfyz/
-cd /home/dfyz/
+sudo cp -r .zshrc /home/$USER/
+sudo cp -r .p10k.zsh /home/$USER/
+cd /home/$USER/
 
     echo #############################################################
 
